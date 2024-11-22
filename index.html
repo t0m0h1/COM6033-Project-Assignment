@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Analysis</title>
+    <script>
+        // Function to handle sentiment prediction
+        async function getPrediction() {
+            // Get the user input
+            const inputText = document.getElementById('tweetInput').value;
+
+            if (!inputText.trim()) {
+                alert("Please enter a valid tweet!");
+                return;
+            }
+
+            // Send the input to the Flask backend
+            const response = await fetch('http://127.0.0.1:5000/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: inputText }) // Send input as JSON
+            });
+
+            const result = await response.json(); // Receive prediction
+            document.getElementById('result').innerText = 
+                `Predicted Sentiment: ${result.sentiment}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Twitter Sentiment Analysis</h1>
+
+    <!-- Input form -->
+    <textarea id="tweetInput" rows="4" cols="50" placeholder="Enter tweet here.."></textarea><br><br>
+    <button onclick="getPrediction()">submit</button>
+
+    <!-- Display result -->
+    <p id="result" style="font-weight: bold; color: blue; margin-top: 20px;"></p>
+</body>
+</html>

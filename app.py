@@ -1,3 +1,6 @@
+#  *** Cross origin requests must be enabled else the system won't work. ***
+
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib

@@ -15,5 +15,5 @@ the system will predict whether the sentiment of the text is positive, negative,
 
 '''python3 -m venv venv
 
-source venv/bin/activate
+'''source venv/bin/activate
 

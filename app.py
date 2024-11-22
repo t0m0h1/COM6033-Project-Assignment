@@ -4,8 +4,8 @@ import joblib
 app = Flask(__name__)
 
 # Load the saved model and vectorizer
-model = joblib.load('sentiment_model.pkl')
-vectoriser = joblib.load('vectorizer.pkl')
+model = joblib.load('model.pkl')
+vectoriser = joblib.load('vectoriser.pkl')
 
 @app.route('/predict', methods=['POST'])
 def predict():

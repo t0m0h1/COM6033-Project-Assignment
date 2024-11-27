@@ -2,7 +2,7 @@
 
 # Sentiment Analysis Flask App
 
-the system will predict whether the sentiment of the text is positive, negative, or neutral.
+The system will predict whether the sentiment of the text is positive, negative, or neutral.
 
 ## Installation
 

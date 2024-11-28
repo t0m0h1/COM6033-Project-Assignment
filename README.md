@@ -45,7 +45,8 @@ In future work, it may be beneficial to experiment with some alternatives, parti
 
 ### Evaluation
 
-The model's performance is evaluated using a testing dataset that was not seen during training. Common evaluation metrics for sentiment analysis include:
+The model's performance is evaluated using a testing dataset that was not seen during training. Evaluation metrics we will be using:
 
-Accuracy: The percentage of correctly predicted sentiments.
-Precision: The ability of the model to avoid false positives.
+Precision, which is the amount of correct positive predictions out of all positive predictions made.  
+Recall, the amount of correct positive predictions out of all actual positives.  
+F1 score, The mean of precision and recall, balancing the two metrics.

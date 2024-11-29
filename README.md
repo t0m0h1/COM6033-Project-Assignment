@@ -1,5 +1,15 @@
 # COM6033-Project-Assignment
 
+*Links to other labs:*
+
+https://github.com/t0m0h1/Week-1-Artificial-Intelligence.git
+https://github.com/t0m0h1/Week-2-AI-Tasks.git
+https://github.com/t0m0h1/Week-3-AI-Tasks.git
+https://github.com/t0m0h1/Week-4-AI-Tasks.git
+https://github.com/t0m0h1/AI-Week-5.git
+https://github.com/t0m0h1/Week-6-AI.git
+
+
 # Sentiment Analysis Flask App
 
 The system will predict whether the sentiment of the text is positive, negative, or neutral.

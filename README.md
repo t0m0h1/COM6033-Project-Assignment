@@ -8,6 +8,7 @@
 - https://github.com/t0m0h1/Week-4-AI-Tasks.git
 - https://github.com/t0m0h1/AI-Week-5.git
 - https://github.com/t0m0h1/Week-6-AI.git
+- https://github.com/t0m0h1/AI-week-7-.git
 
 
 # Sentiment Analysis Flask App
